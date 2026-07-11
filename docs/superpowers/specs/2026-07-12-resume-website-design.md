@@ -34,18 +34,30 @@
 ### Hero
 - **中文**：陳谷維 (Zach) ｜ Full-Stack Engineer
 - **EN**：Chen Gu-Wei (Zach) ｜ Full-Stack Engineer
-- 定位句（中）：6+ 年全端經驗，專精 React / Node.js 與雲原生架構，擅長把複雜業務轉化為穩定可維護的系統。
-- 定位句（EN）：Full-stack engineer with 6+ years building enterprise and product platforms — React, Node.js, and cloud-native architecture.
+- 定位句（中）：6+ 年全端經驗，專精 React / Node.js 與雲原生架構，目前深入 AI Agent 與 AI 輔助開發工作流。
+- 定位句（EN）：Full-stack engineer (6+ yrs) in React, Node.js & cloud-native — now going deep on AI agents and AI-assisted development.
 - 聯絡：a0983828796@gmail.com ｜ 0983-828-796 ｜ Taiwan ｜ GitHub: `<username>`
 
 ### Professional Summary
-**EN：** Full-stack engineer with 6+ years building enterprise and product platforms across banking, government, and manufacturing. I specialize in React and Node.js on cloud-native architectures, owning features end to end — from RESTful API and database design through containerized deployment and CI/CD. I turn tangled business requirements into maintainable, observable systems, and have repeatedly improved delivery speed and stability with Docker, Kubernetes, and automated pipelines. Currently deepening my work in cloud architecture, Golang, and LLM-powered tooling.
+**EN：** Full-stack engineer with 6+ years building enterprise and product platforms across banking, government, and manufacturing. I specialize in React and Node.js on cloud-native architectures, owning features end to end — from RESTful API and database design through containerized deployment and CI/CD. I turn tangled business requirements into maintainable, observable systems, and have repeatedly improved delivery speed and stability with Docker, Kubernetes, and automated pipelines. Right now I'm going deep on AI engineering — from self-hosting open-source LLMs locally (Hermes via Ollama) to building an agentic, AI-assisted development workflow with Claude Desktop and Claude Code — pairing a solid full-stack foundation with modern LLM tooling.
 
-**中文：** 擁有 6+ 年全端開發經驗，橫跨銀行、政府與製造業的企業系統與產品平台。專精 React 與 Node.js 及雲原生架構，能獨立負責從 RESTful API、資料庫設計，到容器化部署與 CI/CD 的完整開發流程。擅長把複雜的業務需求拆解為可維護、可觀測的系統模組，並透過 Docker、Kubernetes 與自動化部署管線持續提升交付速度與系統穩定性。目前持續深化雲端架構、Golang 與 LLM 應用開發。
+**中文：** 擁有 6+ 年全端開發經驗，橫跨銀行、政府與製造業的企業系統與產品平台。專精 React 與 Node.js 及雲原生架構，能獨立負責從 RESTful API、資料庫設計，到容器化部署與 CI/CD 的完整開發流程。擅長把複雜的業務需求拆解為可維護、可觀測的系統模組，並透過 Docker、Kubernetes 與自動化部署管線持續提升交付速度與系統穩定性。目前正深入 AI 工程領域——從在本機自架開源 LLM（Hermes / Ollama）打造本地 AI Agent，到建立以 Claude Desktop 與 Claude Code 為核心的 agentic、AI 輔助開發工作流——將扎實的全端底子與現代 LLM 工具鏈結合。
 
 ### Work Experience
 
-**1. Wistron ITS Corporation — Full-Stack Engineer**（2024/09 – 2025/05）
+**0. Independent AI Engineering & Continuous Learning｜自主 AI 工程與持續學習**（2025/05 – Present）
+Projects: Local AI Agent (Hermes / Ollama)、AI-Assisted Development Workflow (Claude Code)、This Portfolio Site
+- (EN) Self-hosted open-source LLMs locally (Hermes model via Ollama) to prototype and run local AI agents, building hands-on intuition for LLM behavior, prompting, and tool use.
+- (EN) Built an agentic, AI-assisted development workflow with Claude Desktop and Claude Code — spec-driven development, custom skills, and MCP tooling — to design, build, and ship projects end to end.
+- (EN) Applied the workflow to real deliverables, including designing and deploying this bilingual portfolio site (static site → GitHub Pages) through an AI-assisted, spec-first process.
+- (EN) Continued strengthening cloud-native foundations: Golang, Kubernetes, and modern web architecture.
+- (中) 在本機自架開源 LLM（Hermes 模型，透過 Ollama）打造並運行本地 AI Agent，實地累積對 LLM 行為、prompting 與工具調用的直覺。
+- (中) 建立以 Claude Desktop 與 Claude Code 為核心的 agentic、AI 輔助開發工作流——spec-driven 開發、自訂 skills 與 MCP 工具，端到端設計、實作與交付專案。
+- (中) 將此工作流實際應用於產出，包括以「spec 先行、AI 輔助」流程設計並部署本份中英雙語作品集網站（靜態網站 → GitHub Pages）。
+- (中) 持續深化雲原生基礎：Golang、Kubernetes 與現代 Web 架構。
+- Tech: Claude Code、Claude Desktop、MCP、Ollama、Hermes (local LLM)、Golang、Kubernetes、Git / GitHub Pages
+
+**1. Wistron ITS Corporation 緯創軟體 — Full-Stack Engineer**（2024/09 – 2025/05）
 Projects: Hybrid Cloud Scheduling System、Material Return Early Warning System
 - (EN) Built core frontend and backend for an enterprise hybrid-cloud scheduling system handling large-scale, cross-system data workflows.
 - (EN) Decomposed complex scheduling and data-processing logic into modular services, cutting maintenance overhead and improving code readability.
@@ -59,7 +71,7 @@ Projects: Hybrid Cloud Scheduling System、Material Return Early Warning System
 - (中) 與跨部門團隊協作釐清需求，簡化交付流程。
 - Tech: React (Hooks)、Redux、Ant Design、Zustand、Node.js、NestJS、TypeORM、PostgreSQL、Azure、Docker、GitLab、ArgoCD、Grafana、Jira
 
-**2. Yi-Pin Engineering Co., Ltd. — Full-Stack Engineer**（2021/01 – 2024/09）
+**2. Yi-Pin Engineering Co., Ltd. 邑品工程有限公司 — Full-Stack Engineer**（2021/01 – 2024/09）
 Projects: Camping Site Management System、Matching Platform
 - (EN) Designed and shipped a full camping-site management platform, digitizing reservation, operations, and customer-management workflows.
 - (EN) Built a camping matching platform with search, booking, and order management, improving the reservation experience and booking conversion.
@@ -71,7 +83,7 @@ Projects: Camping Site Management System、Matching Platform
 - (中) 參與系統架構規劃與功能擴充，支援平台持續成長。
 - Tech: React (Hooks)、Redux、Node.js (Express)、MySQL、MongoDB (Mongoose)、GCP、Docker
 
-**3. Yuan-Yu Information Co., Ltd. — Full-Stack Engineer**（2020/05 – 2020/11）
+**3. Yuan-Yu Information Co., Ltd. 圓祐資訊股份有限公司 — Full-Stack Engineer**（2020/05 – 2020/11）
 Projects: Banking Systems（DBS Bank、Cathay Vietnam Insurance）
 - (EN) Developed frontend and backend for a bank loan system, turning complex data-entry processes into user-friendly online workflows.
 - (EN) Integrated multiple external data sources via APIs, reducing manual input and error rates.
@@ -83,7 +95,7 @@ Projects: Banking Systems（DBS Bank、Cathay Vietnam Insurance）
 - (中) 於敏捷開發流程中如期交付功能。
 - Tech: React、Redux-Saga、Java (Spring Boot)、MariaDB、Docker、Jenkins、jQuery、SQL、Jira、Trello
 
-**4. Asia Zhi-Yuan Technology Co., Ltd. — Full-Stack Engineer**（2019/03 – 2020/02）
+**4. Asia Zhi-Yuan Technology Co., Ltd. 亞洲志遠科技股份有限公司 — Full-Stack Engineer**（2019/03 – 2020/02）
 Projects: Harbor Bureau Port Service System（系統升級）
 - (EN) Delivered frontend/backend features and Web Service design for a government port-service system upgrade.
 - (EN) Authored technical documentation to keep development and maintenance in sync.
