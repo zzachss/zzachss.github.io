@@ -270,6 +270,103 @@
       </div>
     </section>
 
+    <!-- ============ Selected Projects ============ -->
+    <section class="section" id="projects">
+      <h2 class="section-title"><span data-lang="zh">精選專案</span><span data-lang="en">Selected Projects</span></h2>
+      <p class="section-lead">
+        <span data-lang="zh">以下皆為近期以 <strong>spec 先行、AI 輔助（Claude Code）</strong> 工作流獨立打造的實作專案（含本履歷網站）。</span>
+        <span data-lang="en">All built recently as independent projects using a <strong>spec-first, AI-assisted (Claude Code)</strong> workflow — including this résumé site itself.</span>
+      </p>
+      <div class="projects-grid">
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name">spec-reader</h3>
+            <span class="project-cat">AI · CLI</span>
+          </div>
+          <p class="project-desc" data-lang="zh">掃描整個專案資料夾、產生單一 HTML 報告的 CLI 工具——評估程式品質、DevSecOps 成熟度（OWASP DSOMM）、DevOps 表現（DORA 指標）、專案間關聯與缺口分析，可選用 Anthropic API 做 AI 加值。</p>
+          <p class="project-desc" data-lang="en">A CLI that scans a folder of projects and generates a self-contained HTML report — scoring code quality, DevSecOps maturity (OWASP DSOMM), DevOps performance (DORA), cross-project connections, and gap analysis, with optional AI enrichment via the Anthropic API.</p>
+          <ul class="chips chips-tech"><li>TypeScript</li><li>Node.js</li><li>Anthropic API</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name">AI Trading Bot</h3>
+            <span class="project-cat">AI · Fintech</span>
+          </div>
+          <p class="project-desc" data-lang="zh">模擬交易的加密貨幣機器人：技術指標（RSI＋均線交叉、箱型/費波那契）產生候選訊號，再由 Claude 顧問逐筆核准或否決，最後模擬撮合下單。整合 Binance／OKX／Kraken／Coinbase 公開行情，純模擬、不下真實單。</p>
+          <p class="project-desc" data-lang="en">Paper-trading crypto bot: technical indicators (RSI + MA crossover, box/Fibonacci) propose candidate signals, a Claude advisor approves or vetoes each, and a simulated broker fills them. Pulls public data from Binance / OKX / Kraken / Coinbase — simulation only, no real orders.</p>
+          <ul class="chips chips-tech"><li>Python</li><li>Anthropic API</li><li>Exchange APIs</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name"><span data-lang="zh">資安學習平台</span><span data-lang="en">Cybersecurity Learning Platform</span></h3>
+            <span class="project-cat">AI · MCP</span>
+          </div>
+          <p class="project-desc" data-lang="zh">資安訓練平台：React + Vite 前端搭配 Java Spring Boot 的 MCP 伺服器（Spring AI、Streamable-HTTP <code>/mcp</code>），提供產生課綱、測驗與實作 lab 指引的 MCP tools、resources 與 prompts。</p>
+          <p class="project-desc" data-lang="en">Cybersecurity training platform pairing a React + Vite frontend with a Java Spring Boot MCP server (Spring AI, Streamable-HTTP <code>/mcp</code>) that exposes MCP tools, resources, and prompts for lesson outlines, quizzes, and hands-on lab guidance.</p>
+          <ul class="chips chips-tech"><li>React</li><li>Vite</li><li>Java</li><li>Spring Boot</li><li>Spring AI</li><li>MCP</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name"><span data-lang="zh">企業系統整合套件</span><span data-lang="en">Enterprise Integration Suite</span></h3>
+            <span class="project-cat">Full-Stack · DevOps</span>
+          </div>
+          <p class="project-desc" data-lang="zh">以單一入口整合四套自建系統——BPM（流程簽核）、ITSM（IT 服務管理）、CRM 與文件庫——透過 nginx gateway（含 Basic-Auth）與 Docker Compose 統一部署。</p>
+          <p class="project-desc" data-lang="en">Single-entry platform unifying four self-built systems — BPM (workflow approval), ITSM (IT service management), CRM, and a document library — behind one nginx gateway with Basic-Auth, orchestrated via Docker Compose.</p>
+          <ul class="chips chips-tech"><li>Docker Compose</li><li>nginx</li><li>Node.js</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name">CRM</h3>
+            <span class="project-cat">Full-Stack</span>
+          </div>
+          <p class="project-desc" data-lang="zh">小團隊 CRM：客戶管理、互動紀錄、待辦提醒與 Pipeline 看板，採用最新技術棧並以 Vitest 測試。</p>
+          <p class="project-desc" data-lang="en">Small-team CRM with customer management, interaction logs, reminders, and a pipeline board — built on a current stack and tested with Vitest.</p>
+          <ul class="chips chips-tech"><li>Next.js 16</li><li>React 19</li><li>Prisma 7</li><li>PostgreSQL</li><li>Tailwind 4</li><li>Vitest</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name"><span data-lang="zh">法拍不動產整合平台</span><span data-lang="en">Foreclosure Real-Estate Platform</span></h3>
+            <span class="project-cat">Data · Maps</span>
+          </div>
+          <p class="project-desc" data-lang="zh">整合司法院法拍、金拍與國產署標售等台灣政府開放資料，於國土測繪圖資底圖上定位標的，結合實價登錄與歷史折價率估算合理投標區間，並一鍵產生可列印報價單。</p>
+          <p class="project-desc" data-lang="en">Aggregates judicial and financial foreclosure / tender listings from Taiwan government open data, plots them on national base-map tiles, estimates fair bid ranges from actual-price registration and historical discount rates, and generates printable client quotes.</p>
+          <ul class="chips chips-tech"><li>Python</li><li>Node.js</li><li>Open Data</li><li>WMTS Maps</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name">cx — Command Center</h3>
+            <span class="project-cat">Tooling · Go</span>
+          </div>
+          <p class="project-desc" data-lang="zh">以 Go 打造的跨平台指令中心：互動式模糊搜尋 TUI，搜尋、比較並執行來自 Windows PATH 與各 WSL distro 的可執行檔，內建 WSL 執行環境診斷與修復。</p>
+          <p class="project-desc" data-lang="en">A Go CLI with an interactive fuzzy-search TUI that discovers, compares, and runs executables across the Windows PATH and every installed WSL distro — including diagnostics and repair for the WSL runtime.</p>
+          <ul class="chips chips-tech"><li>Go</li><li>TUI</li><li>WSL</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-name">lock-finder</h3>
+            <span class="project-cat">Web · SSG</span>
+          </div>
+          <p class="project-desc" data-lang="zh">全球行李寄放與置物櫃地圖：繁中／英／日三語靜態生成網站，含城市頁、據點頁、附近搜尋與聯盟導客，具資料驗證流程與 Playwright 冒煙測試。</p>
+          <p class="project-desc" data-lang="en">A global luggage-storage & locker finder — a trilingual (中/EN/日) statically-generated site with city and location pages, nearby search, and affiliate routing, plus a data-validation pipeline and Playwright smoke tests.</p>
+          <ul class="chips chips-tech"><li>Next.js</li><li>SSG</li><li>i18n</li><li>Playwright</li></ul>
+        </article>
+
+      </div>
+      <p class="projects-more">
+        <span class="lbl" data-lang="zh">還有</span><span class="lbl" data-lang="en">Also</span>
+        <span data-lang="zh"><strong>music-mixer</strong>（瀏覽器影片配樂＋Web Audio 合成）、<strong>poker</strong>（Next.js＋Supabase 撲克覆盤系統）、<strong>ticket-crawler</strong>（TDX API 票務餘位監控＋多通道通知）、<strong>pet-moving</strong>（跨國寵物檢疫時程規劃）等專案。</span>
+        <span data-lang="en"><strong>music-mixer</strong> (browser video-scoring with Web Audio synthesis), <strong>poker</strong> (Next.js + Supabase review system), <strong>ticket-crawler</strong> (TDX-API availability monitor with multi-channel alerts), <strong>pet-moving</strong> (cross-border pet-quarantine planner), and more.</span>
+      </p>
+    </section>
+
     <!-- ============ Education ============ -->
     <section class="section" id="education">
       <h2 class="section-title"><span data-lang="zh">學歷</span><span data-lang="en">Education</span></h2>

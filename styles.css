@@ -350,6 +350,79 @@ a:hover { text-decoration: underline; }
   font-size: 12px;
 }
 
+/* ---------- Selected Projects ---------- */
+.section-lead {
+  margin: -6px 0 20px;
+  color: var(--text-soft);
+  font-size: 15px;
+  max-width: 74ch;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.18s, transform 0.18s;
+}
+.project:hover { border-color: var(--accent-line); transform: translateY(-2px); }
+.project-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.project-name { margin: 0; font-size: 16.5px; font-weight: 700; letter-spacing: -0.01em; }
+.project-cat {
+  flex: none;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.project-desc {
+  margin: 0 0 12px;
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.58;
+  flex: 1 1 auto;
+}
+.project-desc code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: var(--surface-2);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.projects-more {
+  margin: 16px 0 0;
+  color: var(--text-mute);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.projects-more .lbl {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 8px;
+}
+.projects-more strong { color: var(--text-soft); font-weight: 600; }
+
 /* ---------- Facts (certs) ---------- */
 .facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .facts li {
@@ -402,7 +475,9 @@ a:hover { text-decoration: underline; }
   .wrap { max-width: 100%; padding: 0; }
   .section { margin-top: 18px; page-break-inside: avoid; }
   .job { break-inside: avoid; box-shadow: none; border-color: #d0d4da; margin-bottom: 10px; padding: 12px 14px; }
-  .skill-group, .facts li { box-shadow: none; }
+  .skill-group, .facts li, .project { box-shadow: none; }
+  .project { break-inside: avoid; }
+  .projects-grid { gap: 10px; }
   .job-current { background: #fff; }
   .chips-tech li { border-color: #d0d4da; }
   a { color: #000; }
