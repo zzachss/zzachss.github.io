@@ -2,7 +2,7 @@
 
 Bilingual (中文 / English), theme-switchable personal résumé for **Chen Gu-Wei (Zach)**, Full-Stack Engineer.
 
-**Live site:** https://REPLACE_ME.github.io
+**Live site:** https://zzachss.github.io
 
 ## Features
 - 🌏 中英雙語切換（偏好記憶）
