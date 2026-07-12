@@ -287,6 +287,10 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- Prose ---------- */
 .prose { margin: 0; color: var(--text-soft); font-size: 16.5px; max-width: 72ch; }
+.bio { max-width: 74ch; }
+.bio-p { font-size: 15.5px; line-height: 1.75; margin: 0 0 1.05em; }
+.bio-p:last-child { margin-bottom: 0; }
+.bio-p strong { color: var(--text); font-weight: 600; }
 .section-lead { margin: -8px 0 22px; color: var(--text-soft); font-size: 15px; max-width: 74ch; }
 .section-lead strong, .prose strong { color: var(--text); font-weight: 600; }
 
