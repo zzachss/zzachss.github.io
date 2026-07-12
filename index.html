@@ -277,6 +277,38 @@
         <span data-lang="zh">以下皆為近期以 <strong>spec 先行、AI 輔助（Claude Code）</strong> 工作流獨立打造的實作專案（含本履歷網站）。</span>
         <span data-lang="en">All built recently as independent projects using a <strong>spec-first, AI-assisted (Claude Code)</strong> workflow — including this résumé site itself.</span>
       </p>
+
+      <article class="project-featured">
+        <div class="pf-ribbon"><span data-lang="zh">★ 旗艦專案</span><span data-lang="en">★ Flagship</span></div>
+        <div class="pf-head">
+          <h3 class="pf-name"><span data-lang="zh">企業系統整合套件</span><span data-lang="en">Enterprise System Integration Suite</span></h3>
+          <p class="pf-lead">
+            <span data-lang="zh">將 BPM、HR、帳務、CRM、ITSM 五套全端業務系統，整合在單一 Nginx 閘道 + Docker Compose + 共用 PostgreSQL 之後的自架企業營運平台。</span>
+            <span data-lang="en">A self-hosted enterprise operations platform unifying five full-stack systems — BPM, HR, Billing, CRM, ITSM — behind one Nginx gateway, a single Docker Compose stack, and a shared PostgreSQL.</span>
+          </p>
+        </div>
+        <ul class="pf-modules">
+          <li><b>BPM</b><span data-lang="zh">流程／簽核引擎</span><span data-lang="en">Workflow &amp; Approval Engine</span></li>
+          <li><b>HR</b><span data-lang="zh">人資與請假</span><span data-lang="en">Employees &amp; Leave</span></li>
+          <li><b>Billing</b><span data-lang="zh">合約與發票</span><span data-lang="en">Contracts &amp; Invoicing</span></li>
+          <li><b>CRM</b><span data-lang="zh">客戶管理</span><span data-lang="en">Customer Management</span></li>
+          <li><b>ITSM</b><span data-lang="zh">IT 服務管理</span><span data-lang="en">IT Service Management</span></li>
+        </ul>
+        <ul class="bullets pf-bullets">
+          <li data-lang="zh">將五套自建全端系統整合在<strong>單一 Nginx 閘道、一份 Docker Compose 堆疊與共用 PostgreSQL</strong> 之後，提供唯一入口。</li>
+          <li data-lang="en">Unified five self-built full-stack systems behind <strong>a single Nginx gateway, one Docker Compose stack, and a shared PostgreSQL</strong> with one entry point.</li>
+          <li data-lang="zh">打造 <strong>BPM 核心</strong>：NestJS + TypeORM 圖形化流程／簽核引擎（流程版本控管、IAM 政策、SLA、具 SSRF 防護的節點），驅動 <strong>React Flow 拖拉式設計器</strong>；HR 與帳務前端的所有簽核皆走此引擎（含伺服器端 PDF 發票）。</li>
+          <li data-lang="en">Built the <strong>BPM core</strong>: a NestJS + TypeORM graph workflow/approval engine (versioned workflows, IAM policy, SLA, SSRF-guarded steps) driving a <strong>React Flow drag-and-drop designer</strong>; HR and Billing route every approval through it (with server-side invoice PDFs).</li>
+          <li data-lang="zh">以 <strong>token 保護的內部 API</strong> 串接各系統——ITSM 工單關聯 CRM 客戶，ITSM 變更單經 <strong>webhook 回呼閉環</strong>交由 BPM 引擎簽核。</li>
+          <li data-lang="en">Cross-integrated the apps over a <strong>token-secured internal API</strong> — ITSM tickets link CRM customers, and ITSM change requests are approved through BPM via a <strong>webhook callback closed loop</strong>.</li>
+          <li data-lang="zh">完整掌握<strong>整合與 DevOps 層</strong>：一次性 migration／種子資料、資安加固（分區限流、安全標頭、唯讀去權限與 no-new-privileges 容器、可選 fail2ban），及冪等的打包、備份／還原與簽核閉環驗證腳本。</li>
+          <li data-lang="en">Owned the <strong>integration / DevOps layer</strong> end to end: one-shot migrations &amp; seeding, security hardening (rate limiting, security headers, read-only / cap-dropped / no-new-privileges containers, optional fail2ban), and idempotent packaging, backup/restore &amp; approval-loop verification scripts.</li>
+        </ul>
+        <ul class="chips chips-tech">
+          <li>TypeScript</li><li>NestJS</li><li>Next.js 16</li><li>React 19</li><li>TypeORM</li><li>Prisma</li><li>PostgreSQL</li><li>Docker Compose</li><li>Nginx</li><li>Nx Monorepo</li><li>React Flow</li><li>NextAuth</li><li>Tailwind CSS</li><li>Redux Toolkit</li>
+        </ul>
+      </article>
+
       <div class="projects-grid">
 
         <article class="project">
@@ -307,16 +339,6 @@
           <p class="project-desc" data-lang="zh">資安訓練平台：React + Vite 前端搭配 Java Spring Boot 的 MCP 伺服器（Spring AI、Streamable-HTTP <code>/mcp</code>），提供產生課綱、測驗與實作 lab 指引的 MCP tools、resources 與 prompts。</p>
           <p class="project-desc" data-lang="en">Cybersecurity training platform pairing a React + Vite frontend with a Java Spring Boot MCP server (Spring AI, Streamable-HTTP <code>/mcp</code>) that exposes MCP tools, resources, and prompts for lesson outlines, quizzes, and hands-on lab guidance.</p>
           <ul class="chips chips-tech"><li>React</li><li>Vite</li><li>Java</li><li>Spring Boot</li><li>Spring AI</li><li>MCP</li></ul>
-        </article>
-
-        <article class="project">
-          <div class="project-top">
-            <h3 class="project-name"><span data-lang="zh">企業系統整合套件</span><span data-lang="en">Enterprise Integration Suite</span></h3>
-            <span class="project-cat">Full-Stack · DevOps</span>
-          </div>
-          <p class="project-desc" data-lang="zh">以單一入口整合四套自建系統——BPM（流程簽核）、ITSM（IT 服務管理）、CRM 與文件庫——透過 nginx gateway（含 Basic-Auth）與 Docker Compose 統一部署。</p>
-          <p class="project-desc" data-lang="en">Single-entry platform unifying four self-built systems — BPM (workflow approval), ITSM (IT service management), CRM, and a document library — behind one nginx gateway with Basic-Auth, orchestrated via Docker Compose.</p>
-          <ul class="chips chips-tech"><li>Docker Compose</li><li>nginx</li><li>Node.js</li><li>PostgreSQL</li></ul>
         </article>
 
         <article class="project">
@@ -387,9 +409,8 @@
 
     <!-- ============ Certifications ============ -->
     <section class="section" id="certs">
-      <h2 class="section-title"><span data-lang="zh">語言與證照</span><span data-lang="en">Languages &amp; Certifications</span></h2>
+      <h2 class="section-title"><span data-lang="zh">語言</span><span data-lang="en">Languages</span></h2>
       <ul class="facts">
-        <li><span class="fact-key">TOEIC</span><span class="fact-val">ETS · <span data-lang="zh">〔可補分數〕</span><span data-lang="en">〔score TBD〕</span></span></li>
         <li><span class="fact-key" data-lang="zh">中文</span><span class="fact-key" data-lang="en">Mandarin</span><span class="fact-val"><span data-lang="zh">母語</span><span data-lang="en">Native</span></span></li>
         <li><span class="fact-key" data-lang="zh">英文</span><span class="fact-key" data-lang="en">English</span><span class="fact-val"><span data-lang="zh">職場溝通</span><span data-lang="en">Professional working</span></span></li>
       </ul>
@@ -397,6 +418,10 @@
   </main>
 
   <footer class="foot">
+    <p class="foot-views">
+      <img src="https://komarev.com/ghpvc/?username=zzachss-resume&label=Views&color=2f6bff&style=flat"
+           alt="Visitor views" width="120" height="20" />
+    </p>
     <p>
       <span data-lang="zh">© 2026 陳谷維 Chen Gu-Wei · 以 Claude Code（AI 輔助工作流）設計與部署</span>
       <span data-lang="en">© 2026 Chen Gu-Wei (Zach) · Designed &amp; deployed with an AI-assisted workflow (Claude Code)</span>

@@ -125,7 +125,7 @@ Projects: BPM System Testing & Automation
 1. **spec-reader** — 專案組合智慧分析 CLI（掃描專案→HTML 報告：品質、OWASP DSOMM、DORA、關聯、缺口，可接 Anthropic API）。TypeScript / Node.js。
 2. **AI Trading Bot** — LLM-in-the-loop 模擬交易 bot（指標產訊號→Claude 顧問核准/否決→模擬撮合）。Python / Anthropic API。
 3. **資安學習平台 Cybersecurity Learning Platform** — React+Vite 前端 + Java Spring Boot MCP 伺服器（Spring AI、Streamable-HTTP /mcp）。
-4. **企業系統整合套件 Enterprise Integration Suite** — Docker Compose + nginx gateway 整合 BPM/ITSM/CRM/文件庫。
+4. **🚩 企業系統整合套件 Enterprise System Integration Suite（旗艦，置頂）** — 自架企業營運平台，將 **BPM、HR、Billing、CRM、ITSM** 五套全端系統整合在單一 Nginx 閘道 + 一份 Docker Compose + 共用 PostgreSQL 之後。BPM 核心為 NestJS+TypeORM 圖形化流程引擎（React Flow 設計器、IAM、SLA、SSRF 防護）；ITSM↔CRM 以 token API 互通、ITSM 變更單經 webhook 閉環交由 BPM 簽核。（經對抗式驗證：Billing/HR 為 BPM Nx monorepo 內模組，非獨立 repo。）
 5. **CRM** — Next.js 16 / React 19 / Prisma 7 / PostgreSQL / Tailwind 4 / Vitest。
 6. **法拍不動產整合平台** — 台灣政府開放資料 + 國土測繪底圖 + 估價 + 報價單。Python / Node.js。
 7. **cx — Command Center** — Go 跨平台指令 TUI（PATH + 各 WSL distro）。
@@ -136,9 +136,12 @@ Projects: BPM System Testing & Automation
 Yuan Ze University 元智大學 — B.B.A. in Information Management 資訊管理學系（2013/09 – 2017/06）
 - 畢業專題 Graduation Project: **Flower Matching Platform** — 打造連結花卉供應商與買家的第三方媒合平台，提供線上媒合與管理功能。
 
-### Certifications & Languages
-- **TOEIC** (ETS) — 〔可補分數〕
-- Languages: 中文（母語）、English（professional working）
+### Languages
+- 中文（母語）、English（professional working）
+- （TOEIC 依本人要求先不列）
+
+### Visitor analytics
+- komarev 訪客徽章（零註冊，footer 顯示 Views 計數）。備選：GoatCounter（隱私友善私人儀表板，需註冊）。
 
 ---
 

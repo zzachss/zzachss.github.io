@@ -357,6 +357,72 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
   max-width: 74ch;
 }
+/* Flagship featured project */
+.project-featured {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 22px 24px;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, var(--accent-soft), transparent 46%),
+    var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.pf-ribbon {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+.pf-name {
+  margin: 0 0 6px;
+  font-size: clamp(19px, 3vw, 24px);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.pf-lead {
+  margin: 0 0 16px;
+  color: var(--text-soft);
+  font-size: 15px;
+  max-width: 82ch;
+}
+.pf-modules {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.pf-modules li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 12.5px;
+  color: var(--text-mute);
+  line-height: 1.35;
+}
+.pf-modules li b {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.pf-bullets { margin-bottom: 14px; }
+.pf-bullets li { font-size: 14.5px; }
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -448,6 +514,9 @@ a:hover { text-decoration: underline; }
   font-size: 13px;
   text-align: center;
 }
+.foot-views { margin: 0 0 12px; }
+.foot-views img { height: 20px; vertical-align: middle; opacity: 0.9; }
+@media print { .foot-views { display: none; } }
 
 /* ---------- Reveal animation ---------- */
 .section, .hero { opacity: 1; }
@@ -475,8 +544,9 @@ a:hover { text-decoration: underline; }
   .wrap { max-width: 100%; padding: 0; }
   .section { margin-top: 18px; page-break-inside: avoid; }
   .job { break-inside: avoid; box-shadow: none; border-color: #d0d4da; margin-bottom: 10px; padding: 12px 14px; }
-  .skill-group, .facts li, .project { box-shadow: none; }
-  .project { break-inside: avoid; }
+  .skill-group, .facts li, .project, .project-featured { box-shadow: none; }
+  .project, .project-featured { break-inside: avoid; }
+  .project-featured { background: #fff; }
   .projects-grid { gap: 10px; }
   .job-current { background: #fff; }
   .chips-tech li { border-color: #d0d4da; }
