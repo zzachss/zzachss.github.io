@@ -5,6 +5,9 @@
 
 ---
 
+## 0. v2 視覺改版（2026-07-13）
+「太陽春」問題重做：**電光紫 Electric Violet** 深色為主設計系統。載入 **Inter**（介面）＋ **JetBrains Mono**（區塊編號/標籤/日期/技術標）；hero 加狀態點與柔光背景 + 細格線；區塊用 CSS counter 自動編號（01–05）；卡片 hover 浮起 + 強調邊框；旗艦卡頂部漸層條。對比雙主題皆 ≥ AA、RWD 無溢出、`prefers-reduced-motion` 已處理。精選專案精簡為旗艦 + 6 張（移除與旗艦重複的 CRM 卡）。（依 ui-ux-pro-max skill 設計建議。）
+
 ## 1. 技術架構
 
 - **純靜態單頁網站**：`index.html` + `styles.css` + `script.js`（不需 Node / build step）

@@ -8,6 +8,9 @@
   <meta name="author" content="Chen Gu-Wei (Zach)" />
   <meta name="color-scheme" content="dark light" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -37,7 +40,12 @@
   <main class="wrap">
     <!-- ============ Hero ============ -->
     <section class="hero" id="hero">
-      <p class="hero-eyebrow">Full-Stack Engineer</p>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <p class="hero-status">
+        <span class="dot" aria-hidden="true"></span>
+        <span data-lang="zh">開放新機會</span><span data-lang="en">Open to opportunities</span>
+      </p>
+      <p class="hero-eyebrow">Full-Stack&nbsp;Engineer<span class="eyebrow-sep">/</span>AI</p>
       <h1 class="hero-name">
         <span data-lang="zh">陳谷維 <span class="hero-alias">Zach</span></span>
         <span data-lang="en">Chen Gu-Wei <span class="hero-alias">Zach</span></span>
@@ -339,16 +347,6 @@
           <p class="project-desc" data-lang="zh">資安訓練平台：React + Vite 前端搭配 Java Spring Boot 的 MCP 伺服器（Spring AI、Streamable-HTTP <code>/mcp</code>），提供產生課綱、測驗與實作 lab 指引的 MCP tools、resources 與 prompts。</p>
           <p class="project-desc" data-lang="en">Cybersecurity training platform pairing a React + Vite frontend with a Java Spring Boot MCP server (Spring AI, Streamable-HTTP <code>/mcp</code>) that exposes MCP tools, resources, and prompts for lesson outlines, quizzes, and hands-on lab guidance.</p>
           <ul class="chips chips-tech"><li>React</li><li>Vite</li><li>Java</li><li>Spring Boot</li><li>Spring AI</li><li>MCP</li></ul>
-        </article>
-
-        <article class="project">
-          <div class="project-top">
-            <h3 class="project-name">CRM</h3>
-            <span class="project-cat">Full-Stack</span>
-          </div>
-          <p class="project-desc" data-lang="zh">小團隊 CRM：客戶管理、互動紀錄、待辦提醒與 Pipeline 看板，採用最新技術棧並以 Vitest 測試。</p>
-          <p class="project-desc" data-lang="en">Small-team CRM with customer management, interaction logs, reminders, and a pipeline board — built on a current stack and tested with Vitest.</p>
-          <ul class="chips chips-tech"><li>Next.js 16</li><li>React 19</li><li>Prisma 7</li><li>PostgreSQL</li><li>Tailwind 4</li><li>Vitest</li></ul>
         </article>
 
         <article class="project">
